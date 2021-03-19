@@ -1,0 +1,21 @@
+.workGrid {
+    display: grid;
+    height: 1610px;
+    margin: 5px 5%;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content;
+    grid-template-areas: "azendaImgArea azendaCaseArea"
+    "bunImgArea bunCaseArea";
+}
+.azendaImg {
+    grid-area: azendaImgArea;
+}
+.azendaCase {
+    grid-area: azendaCaseArea;
+}
+.bunImg {
+    grid-area: bunImgArea;
+}
+.bunCase {
+    grid-area: bunCaseArea;
+}
