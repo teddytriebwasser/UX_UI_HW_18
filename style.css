@@ -1,14 +1,16 @@
 .workGrid {
     display: grid;
-    height: 1610px;
-    margin: 5px 5%;
-    grid-template-columns: max-content max-content;
-    grid-template-rows: max-content max-content;
-    grid-template-areas: "azendaImgArea azendaCaseArea"
-    "bunImgArea bunCaseArea";
+    height: auto;
+    margin: 5px 5px;
+    column-gap: 100px;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: auto auto;
+    grid-template-areas: "azendaImgArea bunImgArea"
+    "azendaCaseArea bunCaseArea";
 }
 .azendaImg {
     grid-area: azendaImgArea;
+    background-color: rgb(104, 190, 162);
 }
 .azendaCase {
     grid-area: azendaCaseArea;
@@ -18,4 +20,10 @@
 }
 .bunCase {
     grid-area: bunCaseArea;
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
 }
